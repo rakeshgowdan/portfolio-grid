@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAADa2tqWlpajo6OOjo7i4uLIyMjz8/ODg4NdXV3Pz8/T09NSUlKmpqbV1dW0tLQ1NTXk5OTs7Ox7e3tjY2OKiop1dXUaGhpLS0vBwcGsrKxoaGidnZ1bW1tra2swMDBEREQNDQ0nJyc7OzskJCSZHO62AAAEo0lEQVR4nO3df1+qMBTHcabkb1FT1ExNrZ7/U7z5yrrl5nY2zsbBvp//Rd5XusAYkGUIIYQQQgghhBD6I/XmrfR1eql0xX6tamrWH0b3tV7q0l1aP8cFrmr2nVt34/kmdeMuLWIBN3XLvnu6d6BSxxhAKZvoZ2UE4alu1O8KdqCE/0V/NWcGtuoGaXFvp2XdIL0OK7BXN8cQ717xuW6OKVbhoG6NqRansLazCVucx+AS/wyV6jMKH+vGGNsyCuXtDc9x7hENwvFD4pILd4yLJ5Vc2GZcPCkIqwVhiiCslkxh5D0+hOxBWC2ZwhfGpUOYIgirdf/CjkjhinHpEKaoEcJhvirLcvswDbmqIl84/DnH4a3wnjoiXdidXS9g6bkOwoVbfQHq5Dc3RrSwdeP68YPPOkgWDs0+5bfP1j/NeXmtktA2xcHjZ5ArtF/VoQ8syxU+WYX0i4BihVM7UM2o6yBW6AAqNQ1ekAxh4RQeiOugfzLyFVKi8OAUqhFtSUKFhh9fi7ixCRXmBOGatg5ChabjUS3auZRQ4StFOCEtSqiQNGWTtr8QKqQAiTN/miykTYYVKrz/rZSww1eKdq6vf853HMRWsJB0h03o3kKE0H1YqtSJtg5ChZSjNuJ5flxh+LmFNoioRxxykyp0H5gSD0vFCt17ROpMX7FC1xz4V+o6iBVmR7uQdtidmYReA8qOqgjnViB92FWu0DLk7TU1TbDQcuPiwGMdJAuz0Q2g16GzaGHW25uAfncsyxZmWVcbz/BdP+nCj7/Gn/dOHdoMV7mlCbPzTIX+qtwu2huemQoChZWCsFoQpgjCakGYorhCmTNoIfSJQTjvFv1yPz6+Hcf7cpFvHn3XQbSw0zZNqnlbkkcwzskVzpfvBt5npxX9qQFShSPHlCh12BDXQaawYzzzvWpGOxMWKVwSfOcGlJNFgcIe4ZrFV4RZQ/KEt4afzLlnYeqf4RzzDhDaRklNOf/F9I9wXuX2F/o/+8xFzIurcs6nC3oL7UP55qjTMKPkLSTNULiO99FWfvkK2yFAdUiDMeYpDNlGz0V+NKktT6FrbvetDok4hhIJybPa+YPwKgghrCHDMRiEEEKYOAivgvDvCt+TgbQ8hfNhWP9H3Pr7AVNj2qi6p7B6rpFyj2i3NyYXjiGEEMK/JzRcg4AQQgghhBBCCCGEUJzQMLHizs6Akwt7fNG+MLkwecn/DpMHYfODsPlB2PySC3d9rha0GzuSC5Mftd3/kTeEEEIIYXzh/V97ghBCCCGEEEIIIYzQkU9IezxqcuFjhy3aFyYXJg/C5gdh84Ow+RnuP6S/TqwRGYRlkTO1MzxMacq18HxHe86mQchYrn9h8usWhjcHMGZ4R0nyI2/7G/6qFldIfKDYmu8b9UQIKU+0Ck7CVkp610hwIoShTyshJWIrzQbuRQUn4jcMeO4TPRm/Ie0teGEJEUbcJcrYSrOsy/elV0kRxttjiBGSXrkZkhyh5WUjlRIkzHpRdotC/i+9NGT87q9kCT8O4ApupOEM+Mi3dL+t9FvZ6n7186EPn00utagZxhlGXba8X4aCEEIIIYQQQgihpvQPpPZ0XHO8MH4AAAAASUVORK5CYII=" type="image/icon type">
     <title>My Portfolio</title>
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -12,6 +13,7 @@
   
 </head>
 <body>
+  <div id="loading"></div>
    <div class="container">
       <header id="main-header">
         <div class="row no-gutters">
@@ -267,6 +269,10 @@
         event.preventDefault();
         $(this).ekkoLightbox();
     });
+
+    jQuery(document).ready(function() {
+      jQuery('#loading').fadeOut(3000);
+  });
   </script>
 </body>
 </html>
