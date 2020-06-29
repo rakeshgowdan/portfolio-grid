@@ -5,6 +5,17 @@
     background: #fff url('https://media0.giphy.com/media/swhRkVYLJDrCE/giphy.gif?cid=ecf05e4716b8d3e975dfccf5fd8a428ed51fa47b4729a738&rid=giphy.gif') no-repeat center center ;
     z-index: 9999;
     }
+    @media screen and (min-width: 601px) {
+  div.example {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 20px;
+  }
+}
 .bg-black{
     background: #000000;
     color: white;
