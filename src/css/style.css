@@ -11,7 +11,10 @@
 
 @media screen and (max-width: 600px) {
   div.example {
-    font-size: 20px; } }
+    font-size: 16px; } }
+
+.small-font {
+  font-size: 0.8em; }
 
 .bg-black {
   background: #000000;
@@ -22,7 +25,7 @@
   height: 100%; }
 
 #main-header .port-item {
-  width: 25%; }
+  width: 135%; }
   #main-header .port-item .fa {
     font-size: 1.6em; }
 
